@@ -19,7 +19,7 @@ class TableViewController: UIViewController ,UITableViewDataSource,UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imgArr = ["tree.jpg","water.jpeg","home.jpg","sun.jpg","moon.jpeg","leaves.jpg"]
+        imgArr = ["tree","water","home","sun","moon","leaves"]
         
          aTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
@@ -34,9 +34,7 @@ class TableViewController: UIViewController ,UITableViewDataSource,UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CustomTableViewCell
         
         cell.aLabel.text = imgArr[indexPath.row]
-        let imgName = imgArr[indexPath.row]
-        cell.aImgView.image = UIImage(named: imgName)
-        
+    
         return cell
         
     }

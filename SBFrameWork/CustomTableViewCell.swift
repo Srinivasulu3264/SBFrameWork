@@ -11,7 +11,7 @@ import UIKit
 class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var aLabel: UILabel!
-    @IBOutlet weak var aImgView: UIImageView!
+  
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
