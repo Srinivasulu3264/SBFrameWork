@@ -8,14 +8,20 @@
 
 import UIKit
 import WebKit
+import MBProgressHUD
 
 class WebViewController: UIViewController ,WKNavigationDelegate  {
 
     @IBOutlet weak var webView: WKWebView!
     
+    let hud  = MBProgressHUD()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        webView.navigationDelegate = self
         let url = NSURL(string: "https://www.google.co.in/")! as URL
         webView.load(URLRequest(url: url))
         
@@ -27,9 +33,11 @@ class WebViewController: UIViewController ,WKNavigationDelegate  {
     }
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         print("Strat to load")
+      MBProgressHUD.showAdded(to: self.view, animated: true)
     }
     internal func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         print("finish to load")
+        MBProgressHUD.hideAllHUDs(for: self.view, animated: true)
     }
    
 }

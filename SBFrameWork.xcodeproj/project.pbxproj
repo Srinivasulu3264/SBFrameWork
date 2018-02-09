@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180A8B222DE591D64E4F707D /* Pods_SBFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F0C0BB43F2B662341B40E4 /* Pods_SBFrameWork.framework */; };
 		86CDE382202D7AFC00581F0E /* SBFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CDE378202D7AFB00581F0E /* SBFrameWork.framework */; };
 		86CDE387202D7AFC00581F0E /* SBFrameWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CDE386202D7AFC00581F0E /* SBFrameWorkTests.swift */; };
 		86CDE389202D7AFC00581F0E /* SBFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CDE37B202D7AFB00581F0E /* SBFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86CDE393202D7B2800581F0E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CDE392202D7B2700581F0E /* WebViewController.swift */; };
 		86CDE395202D7B5300581F0E /* SBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CDE394202D7B5300581F0E /* SBViewController.swift */; };
 		86CDE399202D7BCB00581F0E /* FWStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CDE398202D7BCB00581F0E /* FWStoryboard.storyboard */; };
+		BF8835BB0F6032567B301105 /* Pods_SBFrameWorkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F8B6E7CAC3C2657CCD198 /* Pods_SBFrameWorkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		188F8B6E7CAC3C2657CCD198 /* Pods_SBFrameWorkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBFrameWorkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAF2B94D99AD8055CDC7B8F /* Pods-SBFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBFrameWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SBFrameWork/Pods-SBFrameWork.debug.xcconfig"; sourceTree = "<group>"; };
+		5D7393197DF49FE78FACCEFC /* Pods-SBFrameWorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBFrameWorkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SBFrameWorkTests/Pods-SBFrameWorkTests.release.xcconfig"; sourceTree = "<group>"; };
+		82F0C0BB43F2B662341B40E4 /* Pods_SBFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CDE378202D7AFB00581F0E /* SBFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CDE37B202D7AFB00581F0E /* SBFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBFrameWork.h; sourceTree = "<group>"; };
 		86CDE37C202D7AFC00581F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +41,8 @@
 		86CDE392202D7B2700581F0E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		86CDE394202D7B5300581F0E /* SBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBViewController.swift; sourceTree = "<group>"; };
 		86CDE398202D7BCB00581F0E /* FWStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FWStoryboard.storyboard; sourceTree = "<group>"; };
+		DF7E568D52C3217B7C4A1D3D /* Pods-SBFrameWorkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBFrameWorkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SBFrameWorkTests/Pods-SBFrameWorkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBBC3EF6809C04770E8A8288 /* Pods-SBFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBFrameWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-SBFrameWork/Pods-SBFrameWork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180A8B222DE591D64E4F707D /* Pods_SBFrameWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				86CDE382202D7AFC00581F0E /* SBFrameWork.framework in Frameworks */,
+				BF8835BB0F6032567B301105 /* Pods_SBFrameWorkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CBEB0048084ADB7BA092018 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FAF2B94D99AD8055CDC7B8F /* Pods-SBFrameWork.debug.xcconfig */,
+				FBBC3EF6809C04770E8A8288 /* Pods-SBFrameWork.release.xcconfig */,
+				DF7E568D52C3217B7C4A1D3D /* Pods-SBFrameWorkTests.debug.xcconfig */,
+				5D7393197DF49FE78FACCEFC /* Pods-SBFrameWorkTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83D01A4F31B4300779D9CE15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82F0C0BB43F2B662341B40E4 /* Pods_SBFrameWork.framework */,
+				188F8B6E7CAC3C2657CCD198 /* Pods_SBFrameWorkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		86CDE36E202D7AFB00581F0E = {
 			isa = PBXGroup;
 			children = (
 				86CDE37A202D7AFB00581F0E /* SBFrameWork */,
 				86CDE385202D7AFC00581F0E /* SBFrameWorkTests */,
 				86CDE379202D7AFB00581F0E /* Products */,
+				6CBEB0048084ADB7BA092018 /* Pods */,
+				83D01A4F31B4300779D9CE15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,10 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86CDE38C202D7AFC00581F0E /* Build configuration list for PBXNativeTarget "SBFrameWork" */;
 			buildPhases = (
+				DA7DC7CAA466FBA43C8745E3 /* [CP] Check Pods Manifest.lock */,
 				86CDE373202D7AFB00581F0E /* Sources */,
 				86CDE374202D7AFB00581F0E /* Frameworks */,
 				86CDE375202D7AFB00581F0E /* Headers */,
 				86CDE376202D7AFB00581F0E /* Resources */,
+				A03714E7A3BF16E9C7401782 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86CDE38F202D7AFC00581F0E /* Build configuration list for PBXNativeTarget "SBFrameWorkTests" */;
 			buildPhases = (
+				0724CF338D2C30A107A1D03A /* [CP] Check Pods Manifest.lock */,
 				86CDE37D202D7AFC00581F0E /* Sources */,
 				86CDE37E202D7AFC00581F0E /* Frameworks */,
 				86CDE37F202D7AFC00581F0E /* Resources */,
+				4E68396641F177AFB37EEF8D /* [CP] Embed Pods Frameworks */,
+				0E471FFDFE9F765EA7A3A26B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +238,93 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0724CF338D2C30A107A1D03A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SBFrameWorkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E471FFDFE9F765EA7A3A26B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SBFrameWorkTests/Pods-SBFrameWorkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E68396641F177AFB37EEF8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SBFrameWorkTests/Pods-SBFrameWorkTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SBFrameWorkTests/Pods-SBFrameWorkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A03714E7A3BF16E9C7401782 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SBFrameWork/Pods-SBFrameWork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA7DC7CAA466FBA43C8745E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SBFrameWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86CDE373202D7AFB00581F0E /* Sources */ = {
@@ -346,6 +470,7 @@
 		};
 		86CDE38D202D7AFC00581F0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FAF2B94D99AD8055CDC7B8F /* Pods-SBFrameWork.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -357,6 +482,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SBFrameWork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.srinivas.SBFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -369,6 +495,7 @@
 		};
 		86CDE38E202D7AFC00581F0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBBC3EF6809C04770E8A8288 /* Pods-SBFrameWork.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -380,6 +507,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SBFrameWork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.srinivas.SBFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -391,6 +519,7 @@
 		};
 		86CDE390202D7AFC00581F0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF7E568D52C3217B7C4A1D3D /* Pods-SBFrameWorkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,6 +535,7 @@
 		};
 		86CDE391202D7AFC00581F0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D7393197DF49FE78FACCEFC /* Pods-SBFrameWorkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
