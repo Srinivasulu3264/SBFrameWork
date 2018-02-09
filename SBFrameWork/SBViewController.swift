@@ -17,6 +17,7 @@ public class SBViewController: UIViewController {
     }
     
     @IBAction func openWebPage(_ sender: Any) {
+        
         performSegue(withIdentifier: "webSegue", sender: self)
     }
     
@@ -27,22 +28,12 @@ public class SBViewController: UIViewController {
         print(location)
     }
 
-    @IBAction func alertAction(_ sender: Any)
-    {
-        let alertController = UIAlertController(title: "Welcome..!" , message: "BeerChip has Claimed" , preferredStyle:UIAlertControllerStyle.alert)
+    @IBAction func tableButtonAction(_ sender: Any) {
         
-        let okAction = UIAlertAction(title:"OK" , style:.default , handler:{ (action) in
-            alertController.dismiss(animated: true, completion: nil)
-        })
-        
-        let cancelAction = UIAlertAction(title:"Cancel" , style:.destructive , handler:{(action) in
-            alertController.dismiss(animated: true, completion: nil)
-        })
-        
-        alertController.addAction(cancelAction)
-        alertController.addAction(okAction)
-        
-        self.present(alertController, animated: true, completion: nil)
-        
+          performSegue(withIdentifier: "tableSegue", sender: self)
     }
+    
+    
+        
+    
 }
