@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.name         = "SBFrameWork"
 
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
 
   s.summary      = "It will import the storyboard , xib files"
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
 
 
-  s.source       = { :git => "https://github.com/Srinivasulu3264/SBFrameWork.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/Srinivasulu3264/SBFrameWork.git", :tag => "0.0.3" }
 
   s.source_files  = "SBFrameWork", "SBFrameWork/**/*.{h,m,swift}"
 
