@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="485-4M-ON8">
+            <objects>
+                <viewController id="DDG-YD-SR3" customClass="SBViewController" customModule="SBFrameWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fRV-ss-Rdr"/>
+                        <viewControllerLayoutGuide type="bottom" id="GTP-5r-rYK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GHF-aV-uFC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vo-xZ-UWT">
+                                <rect key="frame" x="192.5" y="52" width="174.5" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="WebView">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="openWebPage:" destination="DDG-YD-SR3" eventType="touchUpInside" id="v2E-qR-0R3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDi-Dn-LrY">
+                                <rect key="frame" x="8" y="52" width="174.5" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hello">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="alertAction:" destination="DDG-YD-SR3" eventType="touchUpInside" id="2bF-Ib-pr0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Vo-xZ-UWT" firstAttribute="height" secondItem="rDi-Dn-LrY" secondAttribute="height" id="6df-RX-pnk"/>
+                            <constraint firstItem="2Vo-xZ-UWT" firstAttribute="width" secondItem="rDi-Dn-LrY" secondAttribute="width" id="AcO-vQ-VRu"/>
+                            <constraint firstItem="rDi-Dn-LrY" firstAttribute="centerY" secondItem="GHF-aV-uFC" secondAttribute="centerY" id="FaY-rZ-gmU"/>
+                            <constraint firstItem="rDi-Dn-LrY" firstAttribute="bottom" secondItem="2Vo-xZ-UWT" secondAttribute="bottom" id="Kc6-Ez-pQf"/>
+                            <constraint firstAttribute="trailing" secondItem="2Vo-xZ-UWT" secondAttribute="trailing" constant="8" id="Ri6-MY-et9"/>
+                            <constraint firstItem="rDi-Dn-LrY" firstAttribute="top" secondItem="2Vo-xZ-UWT" secondAttribute="top" id="TGd-ar-U6I"/>
+                            <constraint firstItem="rDi-Dn-LrY" firstAttribute="top" secondItem="fRV-ss-Rdr" secondAttribute="bottom" constant="8" id="UWU-Aq-gPb"/>
+                            <constraint firstItem="rDi-Dn-LrY" firstAttribute="leading" secondItem="GHF-aV-uFC" secondAttribute="leading" constant="8" id="dW5-Mh-5yU"/>
+                            <constraint firstItem="2Vo-xZ-UWT" firstAttribute="leading" secondItem="rDi-Dn-LrY" secondAttribute="trailing" constant="10" id="p4q-Lg-xcY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fDU-PP-z2B"/>
+                    <size key="freeformSize" width="375" height="140"/>
+                    <connections>
+                        <segue destination="KdY-zp-ujy" kind="show" identifier="webSegue" id="owx-1N-Ake"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ic-sb-T1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="106"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="p3l-2L-Pkl">
+            <objects>
+                <viewController id="KdY-zp-ujy" customClass="WebViewController" customModule="SBFrameWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jIf-0u-Aki"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ouh-AT-9A2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CKy-me-GZA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wo-01-TIX">
+                                <rect key="frame" x="8" y="72" width="359" height="587"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ouh-AT-9A2" firstAttribute="top" secondItem="7Wo-01-TIX" secondAttribute="bottom" constant="8" id="BAO-nq-swH"/>
+                            <constraint firstItem="7Wo-01-TIX" firstAttribute="top" secondItem="jIf-0u-Aki" secondAttribute="bottom" constant="8" id="KHm-SD-dvs"/>
+                            <constraint firstAttribute="trailing" secondItem="7Wo-01-TIX" secondAttribute="trailing" constant="8" id="kYh-xX-T5E"/>
+                            <constraint firstItem="7Wo-01-TIX" firstAttribute="leading" secondItem="CKy-me-GZA" secondAttribute="leading" constant="8" id="q5H-DL-RLj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="7Wo-01-TIX" id="iiy-Kf-Nk7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bc-Oc-JMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="106.59670164917542"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NLz-b1-teP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qnu-2T-oML" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fvT-2X-H3e">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DDG-YD-SR3" kind="relationship" relationship="rootViewController" id="oWJ-ud-jBr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AWI-Kq-tHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354" y="107"/>
+        </scene>
+    </scenes>
+</document>
