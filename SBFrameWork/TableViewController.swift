@@ -21,7 +21,7 @@ class TableViewController: UIViewController ,UITableViewDataSource,UITableViewDe
         
         imgArr = ["tree","water","home","sun","moon","leaves"]
         
-          imgArr2 = ["tree.jpg","water.jpeg","home.jpg","sun.jpg","moon.jpeg","leaves.jpg"]
+        imgArr2 = ["tree.jpg","water.jpeg","home.jpg","sun.jpg","moon.jpeg","leaves.jpg"]
         
     //     aTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 

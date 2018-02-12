@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.name         = "SBFrameWork"
 
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
 
   s.summary      = "It will import the storyboard , xib files"
 
@@ -31,13 +31,17 @@ Pod::Spec.new do |s|
 
 
 
-  s.source       = { :git => "https://github.com/Srinivasulu3264/SBFrameWork.git", :tag => "0.0.7" }
+  s.source       = { :git => "https://github.com/Srinivasulu3264/SBFrameWork.git", :tag => "0.0.8" }
 
   s.source_files  = "SBFrameWork", "SBFrameWork/**/*.{h,m,swift}"
 
   s.resources = "SBFrameWork/**/*.{png,jpeg,jpg,storyboard,xib}"
 
-s.resource_bundle = { 'SBFrameWork' => 'SBFrameWork/SBFrameWork/Resources/.' }
+ s.resource_bundle = {
+      'SBFrameWork' => 
+        'SBFrameWork/**/*.{png,jpeg,jpg,storyboard,xib}'
+      
+    }
 
 
   s.framework = "UIKit"
