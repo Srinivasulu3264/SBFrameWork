@@ -90,21 +90,33 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhb-WV-9RF">
-                                                    <rect key="frame" x="23" y="19" width="281" height="77"/>
+                                                    <rect key="frame" x="118" y="43" width="186" height="30"/>
                                                     <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="HFn-xw-QSY"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TAa-Af-c8e">
+                                                    <rect key="frame" x="8" y="-2.5" width="100" height="120.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="5V4-XJ-327"/>
+                                                        <constraint firstAttribute="width" constant="100" id="j1v-tc-uUS"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="uhb-WV-9RF" firstAttribute="centerY" secondItem="t65-pW-6uV" secondAttribute="centerY" id="2Rz-1q-wOw"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="uhb-WV-9RF" secondAttribute="trailing" constant="8" id="9HG-qn-cM6"/>
-                                                <constraint firstItem="uhb-WV-9RF" firstAttribute="top" secondItem="t65-pW-6uV" secondAttribute="topMargin" constant="8" id="BGf-PT-wYb"/>
-                                                <constraint firstItem="uhb-WV-9RF" firstAttribute="leading" secondItem="t65-pW-6uV" secondAttribute="leadingMargin" constant="8" id="dlw-yj-CAo"/>
+                                                <constraint firstItem="TAa-Af-c8e" firstAttribute="centerY" secondItem="t65-pW-6uV" secondAttribute="centerY" id="Fqj-yq-OvB"/>
+                                                <constraint firstItem="TAa-Af-c8e" firstAttribute="leading" secondItem="t65-pW-6uV" secondAttribute="leading" constant="8" id="dAC-aW-WgP"/>
+                                                <constraint firstItem="uhb-WV-9RF" firstAttribute="leading" secondItem="TAa-Af-c8e" secondAttribute="trailing" constant="10" id="gZ1-Ob-8Ql"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="uhb-WV-9RF" secondAttribute="trailing" constant="8" id="ndl-Kp-WEI"/>
+                                                <constraint firstItem="uhb-WV-9RF" firstAttribute="centerY" secondItem="t65-pW-6uV" secondAttribute="centerY" id="oRf-mp-uLk"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="ImgView" destination="TAa-Af-c8e" id="aUO-Dp-WJh"/>
                                             <outlet property="aLabel" destination="uhb-WV-9RF" id="rqx-10-oTV"/>
                                         </connections>
                                     </tableViewCell>

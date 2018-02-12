@@ -14,14 +14,16 @@ class TableViewController: UIViewController ,UITableViewDataSource,UITableViewDe
     @IBOutlet weak var aTable: UITableView!
     
     var imgArr = [String]()
-    
+     var imgArr2 = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         imgArr = ["tree","water","home","sun","moon","leaves"]
         
-         aTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+          imgArr2 = ["tree.jpg","water.jpeg","home.jpg","sun.jpg","moon.jpeg","leaves.jpg"]
+        
+    //     aTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
         // Do any additional setup after loading the view.
     }
@@ -34,6 +36,9 @@ class TableViewController: UIViewController ,UITableViewDataSource,UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CustomTableViewCell
         
         cell.aLabel.text = imgArr[indexPath.row]
+        
+        let name  = imgArr2[indexPath.row]
+        cell.ImgView.image = UIImage(named: name)
     
         return cell
         
