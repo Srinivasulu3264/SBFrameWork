@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		180A8B222DE591D64E4F707D /* Pods_SBFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F0C0BB43F2B662341B40E4 /* Pods_SBFrameWork.framework */; };
 		8641FBDC202DACCE005BE282 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641FBDB202DACCE005BE282 /* TableViewController.swift */; };
-		8641FBDE202DAFF8005BE282 /* assest.xcstickers in Resources */ = {isa = PBXBuildFile; fileRef = 8641FBDD202DAFF8005BE282 /* assest.xcstickers */; };
 		8641FBE0202DB13C005BE282 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641FBDF202DB13C005BE282 /* CustomTableViewCell.swift */; };
+		86A18F6720341D4C00406880 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A18F6620341D4C00406880 /* assets.xcassets */; };
 		86CDE382202D7AFC00581F0E /* SBFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86CDE378202D7AFB00581F0E /* SBFrameWork.framework */; };
 		86CDE387202D7AFC00581F0E /* SBFrameWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CDE386202D7AFC00581F0E /* SBFrameWorkTests.swift */; };
 		86CDE389202D7AFC00581F0E /* SBFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CDE37B202D7AFB00581F0E /* SBFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,8 +36,8 @@
 		5D7393197DF49FE78FACCEFC /* Pods-SBFrameWorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBFrameWorkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SBFrameWorkTests/Pods-SBFrameWorkTests.release.xcconfig"; sourceTree = "<group>"; };
 		82F0C0BB43F2B662341B40E4 /* Pods_SBFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8641FBDB202DACCE005BE282 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		8641FBDD202DAFF8005BE282 /* assest.xcstickers */ = {isa = PBXFileReference; lastKnownFileType = folder.stickers; path = assest.xcstickers; sourceTree = "<group>"; };
 		8641FBDF202DB13C005BE282 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		86A18F6620341D4C00406880 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		86CDE378202D7AFB00581F0E /* SBFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CDE37B202D7AFB00581F0E /* SBFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBFrameWork.h; sourceTree = "<group>"; };
 		86CDE37C202D7AFC00581F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,9 +118,9 @@
 				86CDE37B202D7AFB00581F0E /* SBFrameWork.h */,
 				86CDE394202D7B5300581F0E /* SBViewController.swift */,
 				86CDE392202D7B2700581F0E /* WebViewController.swift */,
-				8641FBDD202DAFF8005BE282 /* assest.xcstickers */,
 				8641FBDB202DACCE005BE282 /* TableViewController.swift */,
 				8641FBDF202DB13C005BE282 /* CustomTableViewCell.swift */,
+				86A18F6620341D4C00406880 /* assets.xcassets */,
 				86CDE398202D7BCB00581F0E /* FWStoryboard.storyboard */,
 				86CDE37C202D7AFC00581F0E /* Info.plist */,
 			);
@@ -235,8 +235,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A18F6720341D4C00406880 /* assets.xcassets in Resources */,
 				86CDE399202D7BCB00581F0E /* FWStoryboard.storyboard in Resources */,
-				8641FBDE202DAFF8005BE282 /* assest.xcstickers in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
